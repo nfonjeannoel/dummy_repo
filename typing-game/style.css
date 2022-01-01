@@ -1,0 +1,51 @@
+.highlight{
+    background-color: yellow;
+}
+
+.error{
+    background-color: lightcoral;
+    border: red;
+}
+
+h1{
+    text-align: center;
+    color: green;
+    font-size: 50px;
+    font-family: Bahnschrift;
+}
+body{
+    background-color: aliceblue;
+}
+p{
+    text-align: center;
+    font-family: "Arial Black";
+    color: #1BA39C;
+}
+#typed-value{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    height: 30px;
+    padding: 3px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+#start{
+    display: flex;
+    margin: 10px auto auto;
+    width: auto;
+    padding: 5px 10px 5px 10px;
+    background-color: #16A085;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
