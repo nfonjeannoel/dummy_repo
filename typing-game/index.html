@@ -8,16 +8,34 @@
     <title>Typing Game</title>
 </head>
 <body>
-    <h1>Typing game!</h1>
-    <p>Practice your typing skills with a quote from Sherlock Holmes. Click **start** to begin!</p>
-    <p id="quote"></p> <!-- This will display our quote -->
-    <p id="message"></p> <!-- This will display any status messages -->
+<h1>Typing game!</h1>
+<p>Practice your typing skills with a quote from Sherlock Holmes. Click **start** to begin!</p>
+<p id="quote"></p> <!-- This will display our quote -->
+<p id="message"></p> <!-- This will display any status messages -->
+<p id="typed"></p>
+<div>
     <div>
-        <div>
-            <input type="text" aria-label="current word" id="typed-value" /> <!-- The textbox for typing -->
-        </div>
-        <button type="button" id="start">Start</button> <!-- To start the game -->
+        <input type="text" aria-label="current word" id="typed-value"/> <!-- The textbox for typing -->
     </div>
-    <script src="script.js"></script>
+    <button type="button" id="start">Start</button> <!-- To start the game -->
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>CONGRATULATIONS</h2>
+        </div>
+        <div class="modal-body">
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
