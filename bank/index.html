@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <title>Bank App</title>
+</head>
+<body>
+<!-- This is where you'll work -->
+<div id="app">Loading...</div>
+
+<template id="login">
+    <h1>Bank App</h1>
+    <section>
+        <!--        <a class="click-link" href="/dashboard">Login</a>-->
+
+        <h2>Login</h2>
+        <form id="loginForm" action="javascript:login()">
+            <label for="username">Username</label>
+            <input type="text" name="user" id="username">
+            <div id="loginError" role="alert"></div>
+            <button>Login</button>
+        </form>
+
+        <hr/>
+        <h2>Register</h2>
+        <form id="registerForm" action="javascript:register()" method="post">
+            <label for="user">Username (required)</label>
+            <input type="text" name="user" id="user" maxlength="20" required>
+            <label for="currency">Currency (required)</label>
+            <input type="text" name="currency" id="currency" maxlength="5" value="$" required>
+            <label for="description">Description</label>
+            <input type="text" name="description" id="description" maxlength="100">
+            <label for="balance">Current balance</label>
+            <input type="number" name="balance" id="balance" value="0">
+            <div id="registerError" role="alert"></div>
+            <button>Register</button>
+        </form>
+
+    </section>
+
+
+</template>
+
+<template id="credits">
+    <a class="click-link" href="/dashboard">Dashboard</a>
+    <p>Created by Jeannoel</p>
+</template>
+
+<template id="transaction">
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</template>
+
+<template id="dashboard">
+    <header>
+        <h1>Bank App</h1>
+        <a href="/login" class="click-link">Logout</a>
+        <a href="/credits" class="click-link">Credits</a>
+    </header>
+    <section>
+        Balance: <span id="balance"></span><span id="currency"></span>
+    </section>
+    <section>
+        <h2 id="description"></h2>
+    </section>
+    <section>
+        <h2>Transactions</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>Date</th>
+                <th>Object</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody id="transactions"></tbody>
+        </table>
+    </section>
+</template>
+</body>
+</html>
