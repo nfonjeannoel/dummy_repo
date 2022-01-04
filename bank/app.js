@@ -9,7 +9,7 @@ const routes = {
     '/dashboard': {templateId: 'dashboard', init: refresh},
     '/credits': {templateId: 'credits'},
 };
-
+// d
 function createTransactionRow(transaction) {
     const template = document.getElementById('transaction');
     const transactionRow = template.content.cloneNode(true);
